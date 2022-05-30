@@ -18,8 +18,8 @@ public class ScannerClass {
 
         double z;
         z = sc.nextDouble(); //Entrada de Ponto flutuante em Java, entende se deve ser " . " ou " , " para separar as
-                             // casas decimais de acordo com a localidade da máquina
-                                // para usar . use o comando Locale
+        // casas decimais de acordo com a localidade da máquina
+        // para usar . use o comando Locale
         System.out.println("Você digitou: " + z);
 
         //Usando CharAt
@@ -41,6 +41,21 @@ public class ScannerClass {
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
+
+        String s1, s2, s3;
+
+        s1 = sc.nextLine();
+        // Armazenado a quebra de linha antes de passar para a próxima variável (Limpar Buffer)
+        sc.nextLine();
+        s2 = sc.nextLine();
+        // Armazenado a quebra de linha antes de passar para a próxima variável (Limpar Buffer)
+        sc.nextLine();
+        s3 = sc.nextLine();
+
+        System.out.println("Dados Digitados:");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
 
         sc.close(); //Encerrando e desalocando a entrada do dado da memória
     }
