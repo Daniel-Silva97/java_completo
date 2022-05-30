@@ -1,3 +1,5 @@
+package secaoEstruturaSequencial;
+
 public class mathFunction {
     public static void main(String[] args) {
         double x = 3.0;
