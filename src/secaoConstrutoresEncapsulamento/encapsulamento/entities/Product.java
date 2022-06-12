@@ -1,4 +1,4 @@
-package encapsulamento.entities;
+package secaoConstrutoresEncapsulamento.encapsulamento.entities;
 
 public class Product {
     // Por convenção, os atributos devem estar em private e só podem ser acessados por Getters and Setters.

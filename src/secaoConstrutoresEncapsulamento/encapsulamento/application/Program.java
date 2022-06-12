@@ -1,6 +1,6 @@
-package construtores.application;
+package secaoConstrutoresEncapsulamento.encapsulamento.application;
 
-import construtores.entities.Product;
+import secaoConstrutoresEncapsulamento.encapsulamento.entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -16,8 +16,17 @@ public class Program {
         System.out.print("Price: ");
         double price = sc.nextDouble();
 
-        // Instaciando o construtor sem um atributo, aula de sobrecarga
+
         Product product = new Product(name, price);
+
+
+        // Usando o secaoConstrutoresEncapsulamento.encapsulamento atribuindo e consultando atributos por meio dos Getters and Setters
+        product.setName("Computer");
+        System.out.println("Updated Name: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Updated Price: " + product.getPrice());
+        System.out.println("Quantity: " + product.getQuantity());
+
 
         System.out.println();
         System.out.println("Product data: " + product);
