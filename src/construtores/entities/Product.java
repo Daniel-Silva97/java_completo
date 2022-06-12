@@ -7,9 +7,13 @@ public class Product {
 
     // Criando o construtor para obrigar o programa a instaciar o objeto informando valores diferentes do default
     public Product(String name, double price, int quantity) {
-            this.name = name;
-            this.price = price;
-            this.quantity = quantity;
+        // this é usado para acessar o atributo da classe, por exemplo this.name acessa o atributo name
+        // fora do construtor e name é o parâmetro que passei na criação do construtor, então com isso, quando o
+        // objeto for instanciado no programa, os parâmetros que o Construtor recebeu na instanciação,
+        // serão copiados aos atributos da classe.
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
     }
 
     public double totalValueInStock() {
