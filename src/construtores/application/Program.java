@@ -15,11 +15,10 @@ public class Program {
         String name = sc.nextLine();
         System.out.print("Price: ");
         double price = sc.nextDouble();
-        System.out.print("Quantity in stock: ");
-        int quantity = sc.nextInt();
-        // Após criar o construtor agora quando instancio o objeto, o programa me obriga a enviar os campos como parâmetros
-        // Previne erros como a instanciação de um objeto com valores vazios podendo causar erros no programa
-        Product product = new Product(name, price, quantity);
+
+        // Instaciando o construtor sem um atributo, aula de sobrecarga
+        Product product = new Product(name, price);
+
         System.out.println();
         System.out.println("Product data: " + product);
         System.out.println();

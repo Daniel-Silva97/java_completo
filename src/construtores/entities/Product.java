@@ -15,6 +15,13 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+    // Método de Sobrecarga - Podemos criar dois construtores que recebem parâmetros diferentes, com isso podemos
+    // instaciar objetos com TODOS os dados igual o primeiro acima, ou remover atributos não obrigatórios como o caso
+    // do construtor abaixo, sem o atributo quantity, que por padrão será instanciado como 0.
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public double totalValueInStock() {
         return price * quantity;
