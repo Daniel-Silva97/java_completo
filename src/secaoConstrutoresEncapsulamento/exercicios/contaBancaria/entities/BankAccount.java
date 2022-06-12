@@ -6,10 +6,10 @@ public class BankAccount {
     private double balance;
 
     // Construtores
-    public BankAccount(int account, String name, double balance) {
+    public BankAccount(int account, String name, double initialDeposit) {
         this.account = account;
         this.name = name;
-        this.balance = balance;
+        makeDeposit(initialDeposit);
     }
 
     public BankAccount(int account, String name) {

@@ -21,9 +21,9 @@ public class Program {
         System.out.printf("Enter account holder: ");
         String name = sc.nextLine();
         System.out.println("Is there na initial deposit (y/n)? ");
-        String confirmInitialDeposit = sc.nextLine();
+        char confirmInitialDeposit = sc.next().charAt(0);
 
-        if (confirmInitialDeposit.equals("y")) {
+        if (confirmInitialDeposit == 'y') {
             System.out.printf("Enter initial deposit value: ");
             double initialDeposit = sc.nextDouble();
             register = new BankAccount(account, name, initialDeposit);
