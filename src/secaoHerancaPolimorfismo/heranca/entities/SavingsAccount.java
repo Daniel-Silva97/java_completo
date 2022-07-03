@@ -1,6 +1,7 @@
 package secaoHerancaPolimorfismo.heranca.entities;
 
-public class SavingsAccount extends Account{
+// "final" adicionado para não permite que novas classes herdem de SavingsAccount
+public final class SavingsAccount extends Account{
     private Double interestRate;
 
     public SavingsAccount(){}
@@ -21,8 +22,9 @@ public class SavingsAccount extends Account{
         balance += balance * interestRate;
     }
     //Sobrepondo o método withDraw da SuperClasse
+    // Utilizando o final no método para não seja sobreposto em outra classe
     @Override
-    public void withDraw(double amount){
+    public final void withDraw(double amount){
         balance -= amount;
     }
 }
