@@ -36,5 +36,19 @@ public class Program {
             acc5.updateBalance();
             System.out.println("Update!");
         }
+
+        // Aula sobreposição
+        Account acc6 = new Account(1006, "Daniel", 1000.00);
+        acc6.withDraw(200.00);
+        System.out.println(acc6.getBalance());
+
+        // @Override class
+        Account acc7 = new SavingsAccount(1007, "Lucas", 1000.00, 0.01);
+        acc7.withDraw(200.00);
+        System.out.println(acc7.getBalance());
+
+        Account acc8 = new BusinessAccount(1008, "Matheus", 1000.00, 500.00);
+        acc8.withDraw(200.00);
+        System.out.println(acc8.getBalance());
     }
 }

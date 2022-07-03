@@ -22,4 +22,11 @@ public class BusinessAccount extends Account {
             deposit(amount);
         }
     }
+    @Override
+    public void withDraw(double amount){
+        // Usando o método withdraw da Superclasse
+        super.withDraw(amount);
+        // Depois desconto 2 do resultado
+        balance -= 2.0;
+    }
 }
