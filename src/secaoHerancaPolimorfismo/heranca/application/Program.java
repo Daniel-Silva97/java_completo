@@ -50,5 +50,17 @@ public class Program {
         Account acc8 = new BusinessAccount(1008, "Matheus", 1000.00, 500.00);
         acc8.withDraw(200.00);
         System.out.println(acc8.getBalance());
+
+
+        // Polimorfismo
+        Account x = new Account(1020, "Alex", 1000.0);
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+
+        x.withDraw(50.0);
+        y.withDraw(50.0);
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
+
     }
 }
