@@ -1,5 +1,6 @@
 package secaoHerancaPolimorfismo.heranca.application;
 
+<<<<<<< HEAD
 import secaoHerancaPolimorfismo.heranca.entities.Account;
 import secaoHerancaPolimorfismo.heranca.entities.BusinessAccount;
 import secaoHerancaPolimorfismo.heranca.entities.SavingsAccount;
@@ -37,4 +38,7 @@ public class Program {
         }
 
     }
+=======
+public class Program {
+>>>>>>> origin/master
 }
