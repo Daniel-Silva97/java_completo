@@ -3,11 +3,7 @@ package secaoHerancaPolimorfismo.heranca.entities;
 public class Account {
     private Integer number;
     private String holder;
-<<<<<<< HEAD
     protected Double balance;
-=======
-    private Double balance;
->>>>>>> origin/master
 
     public Account(){}
 
