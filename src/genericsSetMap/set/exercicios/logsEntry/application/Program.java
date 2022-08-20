@@ -1,7 +1,7 @@
-package genericsSetMap.set.exercicios.logs.application;
+package genericsSetMap.set.exercicios.logsEntry.application;
 
 
-import genericsSetMap.set.exercicios.logs.entities.LogEntry;
+import genericsSetMap.set.exercicios.logsEntry.entities.LogEntry;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

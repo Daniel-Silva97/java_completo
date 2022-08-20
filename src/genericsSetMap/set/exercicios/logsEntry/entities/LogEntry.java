@@ -1,4 +1,4 @@
-package genericsSetMap.set.exercicios.logs.entities;
+package genericsSetMap.set.exercicios.logsEntry.entities;
 
 import java.util.Date;
 import java.util.Objects;
