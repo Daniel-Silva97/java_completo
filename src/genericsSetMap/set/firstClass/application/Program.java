@@ -1,4 +1,4 @@
-package genericsSetMap.set.application;
+package genericsSetMap.set.firstClass.application;
 
 import java.util.Arrays;
 import java.util.HashSet;
