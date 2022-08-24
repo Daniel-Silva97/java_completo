@@ -47,7 +47,7 @@ public class Program {
                     .map(p -> p.getSalary())
                     .reduce(0.0, (x, y) -> x + y);
 
-            System.out.print("Sum of salary of people whose name starts with 'M': " + sum);
+            System.out.print("Sum of salary of people whose name starts with 'M': " + String.format("%.2f", sum));
         } catch (IOException e) {
             e.printStackTrace();
         }
